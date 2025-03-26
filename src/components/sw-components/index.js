@@ -6,7 +6,7 @@ import {
     PersonList,
     PlanetList,
     StarshipList
-} from "./item-lists"
+} from "./item-list"
 
 export {
     PersonDetails,
