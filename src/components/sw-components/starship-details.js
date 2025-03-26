@@ -7,18 +7,19 @@ import React from 'react';
  
     return (
         <ItemDetails {...props}>
- 
              <Record field="model" label="Model" />
              <Record field="length" label="Length" />
              <Record field="costInCredits" label="Cost" />
+             <Record field="manufacturer" label="Manufacturer" />
+             <Record field="passengers" label="Passengers" />
          </ItemDetails>
      )
  }
  
 const mapMethodsToProps = (swapiService) => {
     return {
-        getData: swapiService.getPlanet,
-        getImageUrl: swapiService.getPlanetImage
+        getData: swapiService.getStarship,
+        getImageUrl: swapiService.getStarshipImage
     }
 }
 
